@@ -1,4 +1,10 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": { "jsx": "react-jsx" },
+  "include": [
+    "src/components", "src/custom.d.ts", "next-env.d.ts", "src/app.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/**/*.ts",
+    "**/**/*.tsx"],
   "extends": "expo/tsconfig.base"
 }

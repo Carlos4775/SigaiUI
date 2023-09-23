@@ -1,9 +1,9 @@
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 const SignUp = () => {
   return (
     <View>
-        <h1>Hola Mundo</h1>
+      <Text>Hola Mundo</Text>
     </View>
   );
 };

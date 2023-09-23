@@ -1,6 +1,7 @@
 {
   "name": "sigaiui",
   "version": "1.0.0",
+  "author": "Carlos Miguel Torres Graciano",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -9,6 +10,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/drawer": "^6.6.3",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/native-stack": "^6.9.13",
     "@types/react": "~18.2.14",
@@ -19,13 +22,27 @@
     "formik": "^2.4.5",
     "react": "18.2.0",
     "react-native": "0.72.4",
+    "react-native-gesture-handler": "~2.12.0",
+    "react-native-heroicons": "^3.2.0",
+    "react-native-reanimated": "~3.3.0",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-safe-area-view": "^1.1.1",
+    "react-native-screens": "~3.22.0",
+    "react-native-svg": "13.9.0",
+    "react-native-svg-uri": "^1.2.3",
+    "react-native-toast-message": "^2.1.6",
+    "react-native-vector-icons": "^10.0.0",
+    "react-navigation": "^4.4.4",
+    "react-navigation-stack": "^2.10.4",
     "slugify": "^1.6.6",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.3",
-    "yup": "^1.2.0"
+    "yup": "^1.2.0",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "jest": "^29.7.0"
   },
   "private": true
 }
