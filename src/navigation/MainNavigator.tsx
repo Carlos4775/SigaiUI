@@ -18,7 +18,7 @@ import AlarmHistory from '../screens/AlarmHistory';
 const Stack = createNativeStackNavigator();
 
 
-export default function AppNavigation() {
+export default function MainNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
