@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@types/connect-history-api-fallback": "^1.5.1",
     "jest": "^29.7.0"
   },
   "private": true
