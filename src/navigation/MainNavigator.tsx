@@ -36,7 +36,7 @@ const menuItems = [
   },
   {
     label: 'Contactos',
-    screenName: 'Conctacts',
+    screenName: 'Contacts',
     component: Contacts,
     icon: 'contacts',
     iconLibrary: 'AntDesign'

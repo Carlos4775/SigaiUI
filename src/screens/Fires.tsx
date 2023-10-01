@@ -13,19 +13,19 @@ const fires = [
   },
   {
     status: 'Nueva',
-    code: '1256AB12',
+    code: '12543252',
     time: '12:06 12:50',
     location: 'Ensanche Luperón'
   },
   {
     status: 'Nueva',
-    code: '1256AB12',
+    code: '12SADS897',
     time: '12:06 12:50',
     location: 'Ensanche Luperón'
   },
   {
     status: 'Nueva',
-    code: '1256AB12',
+    code: '121112DDD',
     time: '12:06 12:50',
     location: 'Ensanche Luperón'
   }
@@ -140,6 +140,7 @@ const Fires = () => {
               code={fire.code}
               time={fire.time}
               location={fire.location}
+              key={fire.code}
             />
           ))}
         </SafeAreaView>
