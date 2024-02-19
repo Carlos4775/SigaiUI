@@ -30,6 +30,23 @@ const CustomDrawer = (props) => {
         <DrawerItemList {...props} />
         <View
           style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            padding: 30
+          }}
+        >
+          <Text
+            style={{
+              fontWeight: '500',
+              fontSize: 14,
+              marginBottom: 10
+            }}
+          >
+            Cerrar sesión
+          </Text>
+        </View>
+        <View
+          style={{
             padding: 30,
             flexDirection: 'row',
             justifyContent: 'center'

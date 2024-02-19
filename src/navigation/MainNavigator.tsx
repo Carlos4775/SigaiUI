@@ -10,21 +10,9 @@ import ChangesHistory from '../screens/ChangesHistory'
 import AlarmHistory from '../screens/AlarmHistory'
 import CustomDrawer from '../components/CustomDrawer'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import Ionicons from 'react-native-vector-icons/Ionicons'
-import AntDesign from 'react-native-vector-icons/AntDesign'
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
-import Entypo from 'react-native-vector-icons/Entypo'
 import { Image } from 'react-native'
 
 const Drawer = createDrawerNavigator()
-
-const iconLibraries = {
-  MaterialCommunityIcons,
-  Ionicons,
-  AntDesign,
-  FontAwesome5,
-  Entypo
-}
 
 const menuItems = [
   {
@@ -39,20 +27,20 @@ const menuItems = [
     screenName: 'Contacts',
     component: Contacts,
     icon: 'contacts',
-    iconLibrary: 'AntDesign'
+    iconLibrary: 'MaterialCommunityIcons'
   },
   {
     label: 'Perfil',
     screenName: 'Profile',
     component: Profile,
-    icon: 'user-circle',
-    iconLibrary: 'FontAwesome5'
+    icon: 'account-box',
+    iconLibrary: 'MaterialCommunityIcons'
   },
   {
     label: 'Historial de alarmas',
     screenName: 'AlarmHistory',
     component: AlarmHistory,
-    icon: 'alarm-light-outline',
+    icon: 'alarm-light',
     iconLibrary: 'MaterialCommunityIcons'
   },
   {
@@ -80,8 +68,8 @@ const menuItems = [
     label: 'Bomberos',
     screenName: 'AlarmHistory',
     component: Firefighters,
-    icon: 'man',
-    iconLibrary: 'Entypo'
+    icon: 'human',
+    iconLibrary: 'MaterialCommunityIcons'
   }
 ]
 
@@ -122,19 +110,13 @@ export default function MainNavigator() {
             key={menuItem.screenName}
             options={{
               drawerIcon: ({ focused, color, size }) => {
-                const IconComponent = iconLibraries[menuItem.iconLibrary]
-
-                if (IconComponent) {
-                  return (
-                    <IconComponent
-                      name={menuItem.icon}
-                      size={size}
-                      color={color}
-                    />
-                  )
-                }
-
-                return null
+                return (
+                  <MaterialCommunityIcons
+                    name={menuItem.icon}
+                    size={size}
+                    color={color}
+                  />
+                )
               }
             }}
           />
